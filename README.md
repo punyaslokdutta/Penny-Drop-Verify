@@ -62,7 +62,7 @@ curl --location --request GET 'https://api.sandbox.co.in/bank/HDFC0000001/accoun
 --header 'x-api-key: key_live_Ade**************************Uxs' \
 --header 'x-api-version: 1.0.0'
 
-```json
+
 {
 	"utr": "210219578183",
 	"account_exists": true,
