@@ -29,13 +29,16 @@ app.get('/bank/:ifsc/accounts/:account_number/verify', (req, res) => {
       message: 'Failed to verify bank account details',
       name_at_bank: ''
    };
-
-   // Check condition for failure response
+   setTimeout(()=>{
+      // Check condition for failure response
    if (req.params.account_number && req.params.account_number != DEFAULT_ACCOUNT_NUMBER) {
       res.json(failureResponse);
    } else {
       res.json(successResponse);
    }
+
+   }, 5000)
+   
 });
 
 // Start the server
