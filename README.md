@@ -37,6 +37,7 @@ A sample response is:
 	"BANKCODE": "DENS",
 	"IFSC": "YESB0DNB002"
 }
+```
 
 ## 2. Account Verification using Penny Drop API
 
@@ -61,8 +62,8 @@ curl --location --request GET 'https://api.sandbox.co.in/bank/HDFC0000001/accoun
 --header 'Authorization: eyJhbGciOiJIUzUxMiJ9.eyJhdWQiOiJBUEkiLCJyZWZyZXNoX3Rva2VuIjoi...YOUR_TOKEN_HERE...' \
 --header 'x-api-key: key_live_Ade**************************Uxs' \
 --header 'x-api-version: 1.0.0'
-
-
+```
+```json
 {
 	"utr": "210219578183",
 	"account_exists": true,
